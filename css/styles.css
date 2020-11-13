@@ -1,0 +1,108 @@
+/*
+Author: Ruby Watt
+Date: 11/12/20
+File name: styles.class
+*/
+/* CSS  Reset */
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+		margin: 0;
+		padding: 0;
+		border: 0;
+}
+
+/* Style rule for header */
+body {
+	background-color: #FCEBEB;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Style rule for navigation area */
+header {
+	width: 20%;
+	float: left;
+}
+
+/* Style rules for navigation area */
+nav {
+	width: 70%;
+	float: right;
+	margin: 5em 3em 0 0;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: right;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 1.5em;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
+}
+
+nav li a {
+	display: block;
+	color: #838383;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+	clear: left;
+	background-color: #fff;
+	padding: 2%;
+	font-size: 1.25em;
+}
+
+.action {
+		font-size: 1.35em;
+		color: #666600;
+		font-weight: bold;
+}
+
+#moutains, #children, #anniversary {
+	width: 29%;
+	float: left;
+	margin: 0 2%;
+}
+#exercises {
+	clear: left;
+	padding: 1% 2%;
+}
+
+.external-link {
+	color: #666600;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#contact {
+	text-align: center;
+}
+
+#contact a {
+	color: #666600;
+	text-decoration: none;
+}
+
+/* Style rules for footer content */
+footer p {
+	font-size: 0.75em;
+	text-align: center;
+	color: #838383;
+	padding: 0 1em;
+}
+
+footer p a {
+		color: #838383;
+		text-decoration: none;
+}
