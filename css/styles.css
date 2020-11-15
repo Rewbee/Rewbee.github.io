@@ -1,18 +1,27 @@
 /*
 Author: Ruby Watt
-Date: 11/12/20
+Date: 11/15/20
 File name: styles.class
 */
-/* CSS  Reset */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img {
+body, header, nav, main, footer, h1, div, img ul {
 		margin: 0;
 		padding: 0;
 		border: 0;
 }
 
 /* Style rule for header */
+header {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		height: 190px;
+}
+
+header img {
+	margin: 0 auto;
+}
 body {
 	background-color: #FCEBEB;
 }
@@ -27,7 +36,6 @@ header {
 	float: left;
 }
 
-/* Style rules for navigation area */
 nav {
 	width: 70%;
 	float: right;
@@ -74,7 +82,7 @@ main {
 	float: left;
 	margin: 0 2%;
 }
-#exercises {
+#Artwork {
 	clear: left;
 	padding: 1% 2%;
 }
