@@ -1,27 +1,17 @@
 /*
 Author: Ruby Watt
-Date: 11/15/20
+Date: 11/30/20
 File name: styles.class
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img ul {
+body, header, nav, main, footer, h1, div, img, ul, {
 		margin: 0;
 		padding: 0;
 		border: 0;
 }
 
 /* Style rule for header */
-header {
-		position: -webkit-sticky;
-		position: sticky;
-		top: 0;
-		height: 190px;
-}
-
-header img {
-	margin: 0 auto;
-}
 body {
 	background-color: #FCEBEB;
 }
@@ -30,45 +20,64 @@ img {
 	display: block;
 }
 
+
+ /* Style rule for box sizing applies to all elements */
+ *{
+	 box-sizing: border-box;
+ }
+/* Style rule for mobile viewport */
+
+
 /* Style rule for navigation area */
 header {
-	width: 20%;
-	float: left;
+	top: 0;
+	background-color: #FCEBEB;
+	height: 190px;
 }
 
+header img {
+	margin: 0 auto;
+}
+
+/* Style rules for navigation area */
 nav {
-	width: 70%;
-	float: right;
-	margin: 5em 3em 0 0;
+	padding: 1%;
+	margin-bottom: 1%;
 }
 
 nav ul {
 	list-style-type: none;
-	margin: 0;
-	text-align: right;
+	text-align: center;
 }
 
 nav li {
-	display: inline-block;
 	font-size: 1.5em;
-	font-family: Verdana, Arial, sans-serif;
-	font-weight: bold;
+	font-family: 'Francois One', sans-serif;
+	border-top: 1px solid #838383;
+}
+
+nav li:first-child {
+	border-top: none;
 }
 
 nav li a {
 	display: block;
 	color: #838383;
-	text-align: center;
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
 
 /* Style rules for main content */
 main {
-	clear: left;
 	background-color: #fff;
 	padding: 2%;
-	font-size: 1.25em;
+	font-size: 1.15em;
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+}
+
+.mobile h3 {
+	text-shadow: 5px 5px 8px #ccc;
 }
 
 .action {
@@ -76,6 +85,30 @@ main {
 		color: #666600;
 		font-weight: bold;
 }
+
+.tel-link {
+	background-color: #b0aeae;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.tel-link a {
+	color: #FCEBEB;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+#talents {
+	width: 29%;
+	float: left;
+	margin: 0 2%;
+	text-align: left;
+}
+
 
 #moutains, #children, #anniversary {
 	width: 29%;
@@ -105,6 +138,11 @@ main {
 #contact a {
 	color: #666600;
 	text-decoration: none;
+}
+.map {
+	border: 2px solid #838383;
+	width: 95%;
+	height: 50%;
 }
 
 /* Style rules for footer content */
