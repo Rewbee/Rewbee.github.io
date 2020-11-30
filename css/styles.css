@@ -1,4 +1,4 @@
-/*
+*
 Author: Ruby Watt
 Date: 11/15/20
 File name: styles.class
@@ -56,6 +56,9 @@ nav li {
 	border-top: 1px solid #838383;
 }
 
+nav li:first-child {
+	border-top: none;
+}
 
 nav li a {
 	display: block;
@@ -154,3 +157,77 @@ footer p a {
 		color: #838383;
 		text-decoration: none;
 }
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px) {
+
+	/* Desktop Viewport: Style rule for header */
+	header {
+		width: 25%;
+		float: left;
+		padding-bottom: 0;
+	}
+
+/* Desktop Viewport: Style rules for nav area */
+	nav {
+		float: right;
+		width: 70%;
+		margin: 4em 1em 0 0;
+	}
+
+	nav ul {
+		text-align: right;
+	}
+
+	nav li {
+		border: none;
+	}
+
+	nav li a {
+		padding: 0.5em 1em;
+	}
+
+	nav li a:hover {
+		color: #000;
+		background-color: #fff;
+	}
+
+	 /* Desktop Viewport: Style Rules for main content */
+	 main {
+		 clear: left;
+	 }
+
+	 main h1 {
+		 font-size: 1.8em;
+	 }
+
+	 #moutains, #children, #anniversary {
+ 		width: 29%;
+ 		float: left;
+ 		margin: 0 2%;
+ 	}
+
+	#Artwork {
+		clear: left;
+	}
+}
+
+ /* Media Query for Large Desktop Viewports */
+ @media screen and (min-width: 1921px) {
+
+	 #containter {
+		 width: 1920px;
+		 margin: 0 auto;
+	 }
+
+ }
+
+ /* Media Query for Print */
+ @media print {
+
+	 body {
+		 background-color: #fff;
+		 color: #000;
+	 }
+
+ }
