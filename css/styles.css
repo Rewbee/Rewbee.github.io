@@ -1,14 +1,14 @@
 /*
 Author: Ruby Watt
-Date: 11/30/20
+Date: 11/15/20
 File name: styles.class
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul, {
-		margin: 0;
-		padding: 0;
-		border: 0;
+body, header, nav, main, footer, h1, div, img, ul {
+	margin : 0;
+	padding : 0;
+	border : 0;
 }
 
 /* Style rule for header */
@@ -56,9 +56,6 @@ nav li {
 	border-top: 1px solid #838383;
 }
 
-nav li:first-child {
-	border-top: none;
-}
 
 nav li a {
 	display: block;
