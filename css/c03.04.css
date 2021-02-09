@@ -3,6 +3,8 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
+
+
 h2 {
   margin: 1.75em 0 0 0;
   color: #838383; 
@@ -89,14 +91,21 @@ p + h2 {
 #blackboard {
 	line-height: 200%;
 	background-color: #FCEBEB;
-	border: 25px solid #d6b8b8;
-	border-radius: 20px;
-	padding-top: 2%;
-	margin: auto;
-	height: 370px;
-	width: 600px;
+	border: 5px solid #d6b8b8;
+	color: #233548;
+  width: 200px;
+  height: auto;
+  padding: 0 15px;
+  padding-bottom: 1.5em;
+  text-align: center;
+  float: bottom;
+  position: sticky;
+  top: 0;
 }
 
+#page {
+  background-color: #403c3b;
+  margin: 0 auto 0 auto;}
 
 .true, .false {
   padding: 0 50px 0 50px;

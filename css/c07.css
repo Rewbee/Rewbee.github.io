@@ -1,79 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald);
 
-
 body {
 	background-color: #FCEBEB;
   font-family: 'Oswald', 'Futura', sans-serif;
   margin: 0; 
   padding: 0;}
-
-/* Style rules for navigation area */
-nav {
-	padding: 1%;
-	margin-bottom: 1%;
-}
-
-nav ul {
-	list-style-type: none;
-	text-align: right;
-}
-
-nav li {
-	font-size: 1.5em;
-	font-family: 'Francois One', sans-serif;
-}
-
-nav li:first-child {
-	border-top: none;
-}
-
-nav li a {
-	display: block;
-	color: #838383;
-	padding: 0.5em 1em;
-	text-decoration: none;
-}
-
-/* Style rules for main content */
-main {
-	background-color: #fff;
-	padding: 2%;
-	font-size: 1.15em;
-	font-family: 'Roboto Slab', serif;
-	text-align: center;
-}
-
-.mobile h3 {
-	text-shadow: 5px 5px 8px #ccc;
-}
-
-.action {
-		font-size: 1.35em;
-		color: #666600;
-		font-weight: bold;
-}
-
-.tel-link {
-	background-color: #b0aeae;
-	padding: 2%;
-	margin: 0 auto;
-	width: 80%;
-	text-align: center;
-	border-radius: 5px;
-}
-
-.tel-link a {
-	color: #FCEBEB;
-	text-decoration: none;
-	font-size: 1.5em;
-	display: block;
-}
-
-#shop-text {
-	text-align: center;
-	font-size: 1em;
-}
-
 
 #page {
   background-color: #403c3b;
@@ -129,10 +60,11 @@ li {
   list-style-type: none;
   height: 50px;
   padding-left: 1em;
-  padding-top: 10px;}
+  padding-top: 10px;
+text-shadow: 2px 2px 1px #914141;}
 
 li a {
-  color: #FCEBEB;
+  color: #66A273;
   background-position: right, center;
   background-repeat: no-repeat;
   text-decoration: none;
@@ -157,7 +89,7 @@ p {
   border-bottom: 1px solid #914141;}
 
 .cool {
-  background-color: #66A273;
+  background-color: #d7666b;
   color: #fff;
   text-shadow: 2px 2px 1px #914141;
   border-top: 1px solid #e99295;
@@ -175,97 +107,18 @@ p {
 
 .complete a {display:block;}
 
-/* Style rules for footer content */
-footer p {
-	font-size: 0.75em;
-	text-align: center;
-	color: #838383;
-	padding: 0 1em;
-}
+.favorite {
+  background-image: url('../javascript-and-jquery-book-code-0915/c07/images/icon-heart.png');
+  background-position: right, center;
+  background-repeat: no-repeat;}
 
-footer p a {
-		color: #838383;
-		text-decoration: none;
-}
-
-/* Form styles */
-
-form {
-  padding: 0 60px 65px 60px;}
-
-label {
-  color: #fff;
-  display: block;
-  margin: 10px 0 10px 0;
-  font-size: 24px;}
-
-input[type='text'], input[type='password'], textarea {
-  background-color: #999;
-  color: #666;
-  font-family: 'Oswald', 'Futura', sans-serif;
-  font-size: 24px;
-  width: 96%;
-  padding: 4px 6px;
-  border: 1px solid #999;
-  border-radius: 8px;}
-
-input[type='text']:focus, input[type='password']:focus, textarea:focus {
-  border: 1px solid #fff;
-  background-color: #fff;
-  outline: none;}
-
-input[type='submit'], a.add {
-  background-color: #cb6868;
-  color: #f3dad1;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 10px;
-  margin-top: 10px;
-  float: right;
-  font-size: 18px;
-  text-decoration: none;
-  text-transform: uppercase;}
-
-input[type='submit']:hover, a.add:hover {
-  background-color: #d75359;
-  color: #f3dad1;
-  cursor: pointer;
-  box-shadow: none;
-  position: relative;
-  top: 1px;}
-
-textarea {
-  width: 96%;
-  height: 5em;
-  line-height: 1.4em;}
-
-select, option {
-  font-size: 16px;}
-
-
-#feedback, #termsHint {
-  color: #fff;
-  background-image: url('../images/warning.png');
+em.seasonal
+ {
+  background-image: url('../javascript-and-jquery-book-code-0915/c07/images/icon-calendar.png');
+  background-position: left  center;
   background-repeat: no-repeat;
-  background-position: 2px 14px;
-  padding: 10px 0 0 22px;}
+  padding-left: 30px;}
 
-#feedback.warning {background-image: url('../images/warning.png');}
-#feedback.tip {background-image: url('../images/tip.png');}
-
-#packageHint {
-  color: #fff;
-  background-image: url('../images/hint.png');
-  background-repeat: no-repeat;
-  background-position: 2px 5px;
-  padding-left: 22px;}
-
-.selectbox {
-  display: inline;}
-
-.checkbox {
-  display: inline;
-  font-size: 16px;}
 
 /* FORM STYLES */
 
@@ -329,14 +182,14 @@ select, option {
 
 #feedback, #termsHint {
   color: #fff;
-  background-image: url('../images/warning.png');
+  background-image: url('../javascript-and-jquery-book-code-0915/c07/images/warning.png');
   background-repeat: no-repeat;
   background-position: 2px 14px;
   padding: 10px 0 0 22px;}
 
 #packageHint {
   color: #fff;
-  background-image: url('../images/hint.png');
+  background-image: url('../javascript-and-jquery-book-code-0915/c07/images/hint.png');
   background-repeat: no-repeat;
   background-position: 2px 5px;
   padding-left: 22px;}
@@ -382,7 +235,7 @@ a.show{
   width: 130px;
   height: 60px;
   background-color: #403c3b;
-  background-image: url('../images/adverlion.png');
+  background-image: url('../javascript-and-jquery-book-code-0915/c07/images/adverlion.png');
   background-repeat: no-repeat;
   background-position: 10px center;
   color: #fff;
@@ -399,123 +252,10 @@ a.show{
   background:none;
   color: #fff;}
 
-
-/* Click event example - note style */
-#note {
-  color: #fff;
-  background-color: #000;
-  opacity: 0.9;
-  box-shadow: -3px 3px 6px #000;
-  padding: 1em 1em 2em 1em;
-  height: 95%;
-  width: 95%;
-  position: absolute;
-  top: 1em;
-  left: 0;}
-
-#note .header + div {
-  background: rgb(255, 255, 255);
-  background: rgba(255, 255, 255, 1);
-  position: relative;
-  text-align: center;
-  top: 1px;
-  color: #d7666b;
-  padding: 20px;
-  margin: 30px;
-  border: 1px solid #d78084;}
-
-#note h2 {
-  color: #d7666b;
-  padding-top: 20px;
-  padding-bottom: 20px;}
-
-#note a {
-  text-decoration: none;
-  color: #fff;}
-
-#note .header {
-  text-align: right;
-  background-color: #000;
-  border: none;
-  padding: 0 0 0 10px;}
-
-.shown {
-  visibility: visible;}
-
-.hidden {
-  visibility: hidden;}
-
-
-/* Position Example */
-#stats {
-  background-color: #6cc0ac;
-  color: #ffffff; 
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  padding: 20px; 
-  width: 100%;}
-
-#stats input[type="text"] {
-  width: 80px;
-  margin: 0 10px 0 10px;
-  background-color: #fff;
-  border-color: #fff;}
-
-#body #page {margin-top: 130px;}
-
-.divider {
-  margin: 0 40px; 
-  border-left: 1px solid #fff; 
-  border-right: 1px solid #fff; 
-  color: #6cc0ac;}
-
-
-/* Character Counter */
-#charactersLeft {
-  color: #fff;
-  font-size: 24px;}
-#lastKey {
-  color: #fff;
-  margin-top: 10px;}
-
-
-/* Membership Options */
-#packageHint, #termsHint {
-  color: #fff;
-  text-shadow: -1px 1px 2px #000;}
-
-#terms {
-  margin-top: 30px;}
-
-/* Mutation */
-#list, #list2 {
-  margin-bottom: 10px;}
-div.button {
-  height: 65px;
-  padding-right: 10px;}
-
-/* Example */
-a[data-state='stop'] {background-image: url('../images/pause.png');}
-a[data-state='record'] {background-image: url('../images/record.png');}
-#buttons {
-  height: 100px;
-  width: 100px;
-  margin: 0 auto;}
-#buttons a {
-  width: 100px;
-  height: 100px; 
-  text-indent: 100%;
-  margin-top: 20px;
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;}
-
-
-/* Small screen - acts like the app would */
+/* Small screen:mobile */
 @media only screen and (max-width: 500px) {
   body {
-    background-color: #403c3b;
+      background-color: #403c3b;
   }
   #page {
     max-width: 480px;
@@ -542,11 +282,7 @@ a[data-state='record'] {background-image: url('../images/record.png');}
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
   h1{
-    background-image: url(../images/2xkinglogo.png);
+    background-image: url(../javascript-and-jquery-book-code-0915/c07/images/2xkinglogo.png);
     background-size: 72px 72px;
   }
 }
-
-
-
-

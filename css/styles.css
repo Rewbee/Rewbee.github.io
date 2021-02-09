@@ -21,6 +21,7 @@ img {
 }
 
 
+
  /* Style rule for box sizing applies to all elements */
  *{
 	 box-sizing: border-box;
@@ -47,7 +48,7 @@ nav {
 
 nav ul {
 	list-style-type: none;
-	text-align: center;
+	text-align: right;
 }
 
 nav li {
@@ -145,6 +146,24 @@ main {
 	height: 50%;
 }
 
+#shop-text {
+	text-align: center;
+	font-size: 1em;
+}
+
+button {
+  margin-top: 20px;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 0 40px;
+  background: #838383;
+  border: none;
+	text-align: center;
+}
+button:hover {
+  background: #838383;
+}
+
 /* Style rules for footer content */
 footer p {
 	font-size: 0.75em;
@@ -210,6 +229,10 @@ footer p a {
 	#Artwork {
 		clear: left;
 	}
+	
+	#center {
+}
+
 }
 
  /* Media Query for Large Desktop Viewports */
@@ -231,3 +254,5 @@ footer p a {
 	 }
 
  }
+#shop-text {
+}
