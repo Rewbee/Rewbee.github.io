@@ -2,7 +2,7 @@ var table = 50; // Unit of table
 var operator = 'addition'; // Type of calculation
 var i = 1; // Set counter to 1
 var msg = ''; // Message
-var camvasNames = ['Filler', 'Extra Small', 'Small', 'Medium', 'Normal', 'Large', 'Extra Large', 'Wall Mural'];
+var camvasNames = ['Filler', 'EX Small Camvas', 'Small Camvas', 'Medium Camvas', 'Normal Camvas', 'Large Camvas', 'EX Large Camvas', 'Wall Mural'];
 
 if (operator === 'addition') {
 	// Do addition
