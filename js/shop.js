@@ -1,3 +1,4 @@
+
 function getTarget(e) {                          // Declare function
   if (!e) {                                      // If there is no event object
     e = window.event;                            // Use old IE event object
@@ -14,11 +15,9 @@ function itemDone(e) {                           // Declare function
   The book used the following code - but it had two shortcomings
   - Clicking between list items would remove the whole list
   - Clicking on italic text would remove the link - not the list item
-
   elParent = target.parentNode;
   elGrandparent = target.parentNode.parentNode;
   elGrandparent.removeChild(elParent);
-
   The next 10 lines improve that example
   */
 
@@ -52,3 +51,4 @@ if (el.addEventListener) {                       // If event listeners work
     itemDone(e);                                 // Call itemDone()
   });
 }									   
+© 2021 GitHub, Inc.
