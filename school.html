@@ -1,38 +1,39 @@
-<!doctype html>
-<html>
-<head>
-	<title>JavaScript &amp; jQuery - Chapter 7: Introducing jQuery - Example</title>
-<meta charset="utf-8">
-  <link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/c03.04.css">
-	<link rel="stylesheet" href="css/c07.css">
-  <link href="https://fonts.googleapis.com/css2?family=Francois+One&amp;family=Roboto+Slab:wght@300&amp;display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-logo.png">
+<<!DOCTYPE html>
+<html ng-app>
+	<head>
+    <title>JavaScript &amp; jQuery - Chapter 9: APIs - Angular with a view model / controller</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="js/angular-controller.js"></script>
+    <link rel="stylesheet" href="css/c09.css">
   </head>
-	<main>
-	<a href="index.html">
-       <strong>BACK TO HOME PAGE</strong>
-     </a>
-	</main>
   <body>
-   <div id="page">
-      <h2>Canvas Shop</h2>
-      <ul>
-        <li id="one" class="hot"><em>EX</em> Small Price: $10</li>
-        <li id="two" class="hot">Small Price: $15</li>
-        <li id="three" class="hot">Medium Price: $20</li>
-    <li id="four"class="hot">Normal Price: $25</li>
-	 <li id="five"class="cold">Large Price: $30</li>
-	<li id="six"class="cold"><em>EX</em> Large Price: $45</li>
-	<li id="seven"class="cold">Wall Mural Price: $150 and Up</li>
-      </ul>
-      <div id="newItemButton"><button href="#" id="showForm">new item</button></div>
-      <form id="newItemForm">
-        <input type="text" id="itemDescription" placeholder="Unique Camvas Size" />
-        <input type="submit" id="add" value="add" />
-      </form>
-    </div>
-    <script src="js/jquery-1.11.0.js"></script>
-    <script src="js/newitem.js"></script>
+	  <header>
+	    <h1><strong>REW-Creates SHOP</strong></h1>
+	  </header>
+    <h2>Buy Canvas</h2>
+    <table ng-controller="BasketCtrl">
+      <tr>
+        <td>Item:</td>
+        <td>{{ description }}</td>
+      </tr>
+      <tr>
+        <td>Cost:</td>
+        <td>${{ cost }}</td>
+      </tr>
+      <tr>
+        <td>Qty:</td>
+        <td><input type="number" ng-model="qty"></td>
+      </tr>
+      <tr>
+        <td>Subtotal:</td>
+        <td>{{qty * cost | currency}}</td>
+      </tr>
+    </table>
+    <div class="two-thirds">
+	  <div class="third"><img src="images/canvas.png" width="270px" height="270px" alt="Canvas Normal 8x10" /></div>
+</div>
+	  
+	  <footer><a href="index.html">
+       <strong>Go BACK TO HOME</strong></footer>
   </body>
 </html>
