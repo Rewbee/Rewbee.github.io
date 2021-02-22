@@ -1,39 +1,77 @@
 <!DOCTYPE html>
-<html ng-app>
-	<head>
-    <title>JavaScript &amp; jQuery - Chapter 9: APIs - Angular with a view model / controller</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
-    <script src="js/angular-controller.js"></script>
-    <link rel="stylesheet" href="css/c09.css">
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 11: Content Panels -  Tabs</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/tabs.css" />
   </head>
+
   <body>
-	  <header>
-	    <h1><strong>REW-Creates SHOP</strong></h1>
+	  
+	 <header>
+       <h2><strong>RESUME</strong></h2>
 	  </header>
-    <h2>Buy Canvas</h2>
-    <table ng-controller="BasketCtrl">
-      <tr>
-        <td>Item:</td>
-        <td>{{ description }}</td>
-      </tr>
-      <tr>
-        <td>Cost:</td>
-        <td>${{ cost }}</td>
-      </tr>
-      <tr>
-        <td>Qty:</td>
-        <td><input type="number" ng-model="qty"></td>
-      </tr>
-      <tr>
-        <td>Subtotal:</td>
-        <td>{{qty * cost | currency}}</td>
-      </tr>
-    </table>
-    <div class="two-thirds">
-	  <div class="third"><img src="images/canvas.png" width="270px" height="270px" alt="Canvas Normal 8x10" /></div>
-</div>
+
+    <section class="page">
+
+      <div class="tabs">
+
+        <ul class="tab-list">
+          <li class="active"><a class="tab-control" href="#tab-1"><h3>Description</h3></a></li>
+          <li><a class="tab-control" href="#tab-2"><h3>Skills</h3></a></li>
+          <li><a class="tab-control" href="#tab-3"><h3>Education</h3></a></li>
+        </ul>
+
+        <div class="tab-panel active" id="tab-1">
+          <p>Ruby Watt is a freelance illustrator currently based in Ecuador.&nbsp;</p>
+    <p>I am a 19-year-old freelance Illustrator/Web Designer and graduate of the Multimedia &amp;
+      Interactive Technology program at Skagit Valley College. I create trendy/ stylish artwork with my own twist.
+      I am actively involved in volunteer service in my community and abroad
+      to help others and to make a difference in the world.&nbsp;</p>
+        </div>
+
+        <div class="tab-panel" id="tab-2">
+          <h4><strong>Qualites:</strong></h4>
+
+    <b><li><em>Continuous learner eager to take on new challenges</em></li>
+    </b>
+        <b><li><em>Work well independently or as part of a team</em></li>
+        </b>
+          <b><li><em>Computer skills in InDesign, Photoshop, Illustrator, Clip Studio Paint, and HTML</em></li>
+          </b>
+        <b><li><em>Creative</em></li>
+        </b>
+          <b><li><em>Speaking effectively and Listening attentively</em></li>
+          </b>
+        </div>
+
+        <div class="tab-panel" id="tab-3">
+            <p><span class="e-heading"><strong><em>Graphic Artist Certificate</em></strong></span><br/>
+						Skagit Valley College <br/>
+						1 Year Course
+					    </p>
+					    <p><span class="date"><strong>GRADUATED IN JUNE 2020</strong></span><br/>
+					    </p>
+					    <p><span class="e-heading"><em>Web Design Certificate</em></span><br/>
+						Skagit Valley College <br/>
+						1 Year Course
+	      </p>
+					   <p><span class="date"><strong>GRADUATED IN MARCH 2021</strong></span></p>
+					    <p><span class="e-heading"><strong><em>High School Graduate</em></strong></span><br/>
+						Kettle Falls High School <br/>
+	      </p>
+					   <p><span class="date"><strong>GRADUATED IN JUNE 2019</strong></span></p>
+        </div>
+
+      </div><!-- .tabs -->
+
+    </section><!-- .page -->
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/tabs.js"></script>
 	  
 	  <footer><a href="index.html">
 		  <strong>Go BACK TO HOME</strong></a></footer>
+
   </body>
 </html>
