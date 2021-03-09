@@ -1,29 +1,71 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JavaScript &amp; jQuery - Chapter 12: Filtering, Searching, and Sorting</title>
-    <link rel="stylesheet" href="css/c12.css" />
+    <title>JavaScript &amp; jQuery - Chapter 13: Form Enhancement and Validation - Validation</title>
+    <link rel="stylesheet" href="css/c13.css" />
+    <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
   </head>
   <body>
-    <header>
-      <h2>PORTFOLIO</h2>
-		<a href="portfolio.html">
+  <div class="container">
+    <form method="post" action="/register" name="register">
+      <div class="one-third column">
+        <img src="images/logo.png" alt="logo" id="logo" />
+        <h2 class="welcome">Become a Friend</h2>
+        <p class="intro">Welcome to Let's Create. We are a group of digital artists who meet up each month to bounce off ideas to eachother and collaborate.&nbsp;</p>
+        <p class="intro"><em>"Alone we can do so little; together we can do so much." - Helen Keller</em></p>
+      </div>
+      <div class="one-third column">
+        <h2>Settings</h2>
+          <div class="name">
+            <label for="name" class="required">Name:</label>
+            <input type="text" placeholder="Enter your name" name="name" id="name" required title="Please enter your name">
+          </div>
+          <div class="email">
+            <label for="email" class="required">Email:</label>
+            <input type="email" placeholder="you@example.com" name="email" id="email" required>
+          </div>
+          <div class="password">
+            <label for="password" class="required">Password:</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div class="password">
+            <label for="conf-password" class="required">Confirm password:</label>
+            <input type="password" name="conf-password" id="conf-password" required>
+          </div>
+        </fieldset>
+      </div>
+      <div class="one-third column">
+        <h2>Profile</h2>
+          <div class="birthday">
+            <label for="birthday" class="required">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" placeholder="yyyy-mm-dd" required>
+            <div id="consent-container" class="hide">
+              <label for="parents-consent">You need a parent's permission to join.
+                Tick here if your child can join:</label>
+              <input type="checkbox" name="parents-consent" id="parents-consent">
+            </div>
+          </div>
+          <div class="bio">
+            <label for="bio">Short Bio (max 140 characters):</label>
+            <textarea name="bio" id="bio" rows="5" cols="30"></textarea>
+            <span id="bio-count" class="hide">140</span>
+          </div>
+          <div class="register"><input type="submit" value="Register"></div>
+      </div>
+    </form>
+  </div><!-- .container -->
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/jquery-ui-1.10.3.custom.js"></script>
+  <script src="js/utilities.js"></script>
+  <script src="js/placeholder-polyfill.js"></script>
+  <script src="js/password-signup.js"></script>
+  <script src="js/birthday.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/bio.js"></script>
+<footer>
+		<a href="index.html">
 		  <strong>Go BACK TO HOME</strong></a>
-    </header>
-    <div id="buttons"></div>
-    <div id="gallery">
-      <img src="images/Ancient Greece.jpg" alt="Ancient Greece Bust with colorful background" width="300" height="300"data-tags="Greece" />
-      <img src="images/Anniversary.jpg" alt="Happy 15th Anniversary" width="300" height="180" data-tags="Family" />
-      <img src="images/Ecuadorian-Children.JPG" data-tags="Family" alt="Children with facorite animals" />
-      <img src="images/Fox.jpg" data-tags="Animal" alt="Fox with a colorful background" />
-      <img src="images/GreekMan.jpg" data-tags="Greece" alt="A greek man with his arm folded looking out" /> 
-      <img src="images/SadWoman.jpg" data-tags="Greece" alt="A greek woman stautes looking sad with colorful bubbles" />
-    </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/filter-tags.js"></script>
-	  
-	  <footer></footer>
-
+    </footer>
     <!--<section class="page">
 
       <div class="tabs">
